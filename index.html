@@ -2,14 +2,121 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Projeto HashForms</title>
 </head>
 
 <body>
-  <script src="script.js"></script>
+  <main class="container">
+    <div class="images">
+      <img
+        src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121793047x871980606331503000%2Foie_transparent.png?w=32&amp;h=45&amp;auto=compress&amp;dpr=1&amp;fit=max" />
+      <img
+        src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121799406x669791932198187400%2Foie_transparent%2520%25281%2529-fotor-202408089554.png?w=96&amp;h=28&amp;auto=compress&amp;dpr=1&amp;fit=max" />
+    </div>
+    <div class="boxes">
+      <section class="box1">
+        <div class="meusDados">
+
+          <h1><i class="bx bx-user-circle"></i> Meus Dados</h1>
+          <p>Confirme seus dados. Eles aparecerão em sua nota fiscal</p>
+          <form action="#" id="formulario">
+            <fieldset>
+              <legend>Dados Pessoais</legend>
+              <div class="formGroup">
+                <label for="iNome">Nome: </label>
+                <input type="text" id="iNome" placeholder="Digite seu nome" required>
+
+              </div>
+              <div class="formGroup">
+                <label for="iCPF">CPF: </label>
+                <input type="number" id="iCPF" placeholder="Digite seu CPF" required>
+              </div>
+              <div class="formGroup">
+                <label for="iTel">Telefone: </label>
+                <input type="number" id="iTel" placeholder="Digite seu telefone" required>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Endereço</legend>
+              <div class="formGroup">
+                <label for="iCep">CEP: </label>
+                <input type="number" id="iCep" placeholder="Digite seu cep" required>
+              </div>
+              <div class="formGroup">
+                <label for="iRua">Rua: </label>
+                <input type="text" id="iRua" placeholder="Digite sua rua" required>
+              </div>
+              <div class="formGroup">
+                <label for="iNumero">Número: </label>
+                <input type="number" id="iNumero" placeholder="Digite o número" required>
+              </div>
+              <div class="formGroup">
+                <label for="iComplemento">Complemento: </label>
+                <input type="text" id="iComplemento" placeholder="Digite o complemento">
+              </div>
+              <div class="formGroup">
+                <label for="iBairro">Bairro: </label>
+                <input type="text" id="iBairro" placeholder="Digite seu Bairro" required>
+              </div>
+              <div class="formGroup">
+                <label for="iCidade">Cidade: </label>
+                <input type="text" id="iCidade" placeholder="Digite sua cidade" required>
+              </div>
+              <div class="formGroup">
+                <label for="iEstado">Estado: </label>
+                <input type="text" id="iEstado" placeholder="Digite seu Estado" required>
+              </div>
+            </fieldset>
+            <button type="submit">AVANÇAR</button>
+          </form>
+        </div>
+      </section>
+      <section class="box2">
+        <div class="resumo">
+
+          <h2><i class="bx bx-receipt"></i> Resumo</h2>
+          <div class="resumoItem">
+            <p>Black Friday - Lote 01: R$ 1.200,00</p>
+            <P>Total: 12x R$ 100,00 ou R$ 1.200,00 à vista</P>
+          </div>
+          <div class="applyDescont">
+            <div class="applyDescontHeader">
+              <Span>Aplicar cupom de desconto <i id="toggle-icon" class="bx bxs-chevron-down"></i></Span>
+            </div>
+            <div class="applyDescontBody">
+              <input type="text" id="discountCode" placeholder="Digite o código de desconto">
+              <button type="button">Aplicar</button>
+              <span id="discount-message" style="display: block; margin-top: 10px; color: green">Desconto de DESCONTO10
+                aplicado!</span>
+              <p>Preço Total: R$ 1200.00</p>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="bx bxl-mastercard"></i>
+            <i class="bx bxl-visa"></i>
+            <i class="bx bxl-paypal"></i>
+            <i class="bx bxl-paypal"></i>
+            <i class="bx bx-barcode"></i>
+          </div>
+          <div class="garantia">
+            <div class="garantiaBox">
+              <h3>Você tem 15 dias de garantia</h3>
+              <p>Experimente! Se não gostar ou ver que não é para você, devolvemos o seu dinheiro! Sem letras miúdas</p>
+
+              <p class="safe"><i class="bx bx-check-shield"></i><strong>Suas informações estão seguras</strong></p>
+              <img src="safe.jpg" alt="carrinho de supermercado com logos de seguranças" width="300px">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer><a href="#">Termos de Uso</a> | <a href="#">Politica de Privacidade</a></footer>
+  </main>
+
 </body>
 
 </html>
