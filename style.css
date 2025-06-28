@@ -1,0 +1,145 @@
+/* geral */
+:root {
+  --background: #30343f;
+  --primary: #1e2749;
+  --secondary: #273469;
+  --text-realce: #fb8500;
+  --text: #aaa;
+  --focus: #ff9f1c;
+  --safe: #45a049;
+  --input-background: #444;
+  --input-border: #555;
+  --button-background: #4caf50;
+  --white: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--primary);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.images {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box1,
+.box2 {
+  flex: 1;
+  background-color: var(--secondary);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.box2 {
+  max-width: 30%;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-realce);
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+/* Formulario */
+.meusDados {
+  max-width: 600px;
+  margin: 20px auto;
+}
+#formulario {
+  margin-top: 15px;
+}
+
+fieldset {
+  border: 1px solid var(--input-border);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+legend {
+  color: var(--text-realce);
+  font-weight: bold;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  flex-basis: 100px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  background-color: var(--input-background);
+  color: var(--white);
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: var(--focus);
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#avancarBtn {
+  background-color: var(--button-background);
+  color: var(--white);
+  display: block;
+  width: 100%;
+}
+
+#avancarBtn:hover {
+  background-color: var(--safe);
+}
+
+/* Resumo */
+#aplicarBtn {
+  background-color: var(--text-realce);
+  color: var(--white);
+}
+#aplicarBtn:hover {
+  background-color: var(--focus);
+}
+
+.applyDescont {
+}
