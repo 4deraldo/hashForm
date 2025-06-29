@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       msgDesconto.textContent = 'Cupom Inválido';
       msgDesconto.style.color = 'red';
       msgDesconto.style.display = 'block';
+      mensagemNovoValor.style.display = 'none';
     }
   });
 });
