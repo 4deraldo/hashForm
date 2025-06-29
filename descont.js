@@ -34,12 +34,18 @@ document.addEventListener('DOMContentLoaded', function () {
       msgDesconto.style.color = 'green';
       mensagemNovoValor.textContent = `Preço Total: R$ ${novoValor.toFixed(2)}`;
       mensagemNovoValor.style.display = 'block';
+
+      //armazenando o cupom no localSotrage
+      localStorage.setItem('Discount', valorInput);
+
+      //limpar o campo input
+      document.getElementById('discountCode').value = '';
     } else {
       //verificação se o cupom for inválido
       msgDesconto.textContent = 'Cupom Inválido';
       msgDesconto.style.color = 'red';
       msgDesconto.style.display = 'block';
-      mensagemNovoValor.style.display = 'none';
+      mensagemNovoValor.style.display = 'none ';
     }
   });
 });
