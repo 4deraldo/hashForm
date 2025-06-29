@@ -16,6 +16,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: var(--background);
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: var(--white);
@@ -60,6 +61,13 @@ h3 {
   color: var(--text-realce);
   font-size: 1.5rem;
   padding: 20px;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 /* Formulario */
@@ -113,14 +121,6 @@ input:focus {
   outline: none;
 }
 
-button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-}
-
 #avancarBtn {
   background-color: var(--button-background);
   color: var(--white);
@@ -133,6 +133,31 @@ button {
 }
 
 /* Resumo */
+.resumo {
+  padding: 0px 10px;
+}
+
+.applyDescont {
+  border-top: 1px solid var(--input-border);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.applyDescontHeader {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+  color: var(--text-realce);
+}
+.applyDescontBody {
+  display: none;
+  margin-top: 10px;
+}
+.applyDescontBody input {
+  width: 90%;
+  margin-right: 5px;
+}
+
 #aplicarBtn {
   background-color: var(--text-realce);
   color: var(--white);
@@ -141,5 +166,49 @@ button {
   background-color: var(--focus);
 }
 
-.applyDescont {
+.icons {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icons i {
+  font-size: 25px;
+}
+
+.garantiaBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-top: 1px solid var(--input-border);
+  border-bottom: 1px solid var(--input-border);
+}
+
+.safe {
+  color: var(--safe);
+}
+
+.safeImage {
+  max-width: 90%;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+/* footer */
+
+footer {
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  color: var(--text);
+
+  & a {
+    color: var(--text-realce);
+    text-decoration: none;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
 }
