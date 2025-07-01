@@ -212,3 +212,9 @@ footer {
     text-decoration: underline;
   }
 }
+
+@media (orientation: portrait) {
+  .box2 {
+    max-width: 100%;
+  }
+}
